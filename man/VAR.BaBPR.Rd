@@ -39,5 +39,8 @@ Bias-correction given with stationarity Correction
 }
 \examples{
 data(dat)
-VAR.BaBPR(dat,p=2,h=10,nboot=200,nb=100,type="const",alpha=0.95)}
+VAR.BaBPR(dat,p=2,h=10,nboot=200,nb=100,type="const",alpha=0.95)
+# nboot and nb are set to low numbers for fast execution in the example
+# In actual implementation, use higher numbers such as nboot=1000, nb=200
+}
 \keyword{ ts }

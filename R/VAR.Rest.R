@@ -4,7 +4,7 @@ function(x,p,restrict,type="const",method="gls")
 n <- nrow(x); k <- ncol(x)
 sigu=VAR.est(x,p,type)$sigu
 
-VARmat = VAR.Rmat(p,k,restrict)
+VARmat = VAR.Rmat(p,k,restrict,type)
 Rmat = VARmat$Rmat; rmat = VARmat$rvec
 y <- t(x[(p+1):n,])
 y1 <- t( t( as.vector(y)) )

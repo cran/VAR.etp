@@ -23,8 +23,8 @@ VAR estimation
   \item{coef }{coefficient matrix}
   \item{resid }{matrix of residuals}
   \item{sigu }{residual covariance matrix}
-  \item{zzmat}{data matrix}
-  \item{zmat}{data matrix}
+  \item{zzmat}{data moment matrix}
+  \item{zmat}{data moment matrix}
   \item{tratio}{matrix of tratio corresponding to coef matrix}
 }
 \references{

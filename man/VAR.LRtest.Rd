@@ -19,8 +19,8 @@ VAR.LRtest(x, p, restrict0, restrict1, type = "const")
 }
 \details{
 Restriction matrix is of m by 3 matrix where m is the number of restrictions.
-a typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
-Ak is a VAR coefficient matrix (k = 1,....p)
+A typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
+Ak is a VAR coefficient matrix (k = 1,....p).
 }
 \value{
 \item{LRstat}{LR test statistic}

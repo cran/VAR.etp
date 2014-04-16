@@ -21,7 +21,7 @@ VAR.Rest(x, p, restrict, type = "const", method = "gls")
 \details{
 
 Restriction matrix is of m by 3 matrix where m is the number of restrictions.
-a typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
+A typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
 Ak is a VAR coefficient matrix (k = 1,....p).
 
 }
@@ -51,7 +51,7 @@ c(3,1,1), c(3,1,2), c(3,1,3), c(3,2,1), c(3,2,2), c(3,2,3), c(3,3,1),c(3,3,3),
 c(4,1,2), c(4,1,3), c(4,2,1), c(4,2,2), c(4,2,3), c(4,3,1),c(4,3,2),c(4,3,3))
 M= VAR.Rest(dat,p=4,restrict,type="const",method="gls")
 print(M$coef)
-print(M$tratio)
+print(M$tstat)
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

@@ -1,7 +1,7 @@
 \name{dat}
 \alias{dat}
 \docType{data}
-\title{ German investment income consumption}
+\title{ German investment income consumption in log difference}
 \description{
 Lutkepohl's data
 }

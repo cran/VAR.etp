@@ -20,7 +20,7 @@ VAR.Waldtest(x, p, restrict, type = "const")
 \details{
 
 Restriction matrix is of m by 3 matrix where m is the number of restrictions.
-a typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
+A typical row of this matrix (k,i,j), which means that (i,j) element of Ak matrix is set to 0.
 Ak is a VAR coefficient matrix (k = 1,....p).
 Under H1, the model is full VAR.
 }

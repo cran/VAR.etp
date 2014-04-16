@@ -39,7 +39,10 @@ No Bias-correction is given
 
 \examples{
 data(dat)
-VAR.BPR(dat,p=2,h=10,nboot=200,type="const",alpha=0.95)}
+VAR.BPR(dat,p=2,h=10,nboot=200,type="const",alpha=0.95)
+# nboot is set to a low number for fast execution in the example
+# In actual implementation, use higher number such as nboot=1000
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ts }
