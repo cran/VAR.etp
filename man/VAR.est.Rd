@@ -39,7 +39,7 @@ See Chapter 3 of Lutkepohl (2005)
 
 \examples{
 
-#replicating Section 3.2.3 of Lutkepohl
+#replicating Section 3.2.3 of of Lutkepohl (2005)
 data(dat)
 M=VAR.est(dat,p=2,type="const")
 print(M$coef)

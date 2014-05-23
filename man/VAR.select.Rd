@@ -35,7 +35,7 @@ See Chapter 4 of Lutkepohl
 
 \examples{
 data(dat)
-#replicating Section 4.3.1
+#replicating Section 4.3.1 of Lutkepohl (2005)
 VAR.select(dat,pmax=4,ic="aic")}
 
 \keyword{ ts }

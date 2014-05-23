@@ -39,7 +39,7 @@ See Chapter 3 of Lutkepohl (2005)
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
-#replicating Section 3.5.3 of Lutkepohl
+#replicating Section 3.5.3 of Lutkepohl (2005)
 data(dat)
 VAR.FOR(dat,p=2,h=10,type="const",alpha=0.95)
 }

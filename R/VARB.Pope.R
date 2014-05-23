@@ -38,5 +38,5 @@ bs <- VAR.adjustP(b,bias,p,type); rownames(bs) <- rownames(b); colnames(bs) <- V
 es <- VAR.resid(x,bs,var1$zmat,p); colnames(es) <- rownames(b)
 sigu <- t(es) %*% es / ( (n-p) -k*p -1)
 
-return(list(coef=bs,resid=es,sigu=sigu))
+return(list(coef=Re(bs),resid=Re(es),sigu=Re(sigu)))
 }

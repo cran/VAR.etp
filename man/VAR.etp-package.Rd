@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab VAR.etp\cr
 Type: \tab Package\cr
-Version: \tab 0.2\cr
-Date: \tab 2014-04-16\cr
+Version: \tab 0.30\cr
+Date: \tab 2014-05-23\cr
 License: \tab GPL-2 \cr
 }
 
@@ -19,7 +19,7 @@ The data set dat.rda is from Lutkepohl's book
 It is German Macrodata in log difference
 
 Bootstrap bias-correction and prediction intervals are also included.
-
+Estimation and Forecasting based on Predictive Regression is also included.
 }
 \author{
 Jae H. Kim

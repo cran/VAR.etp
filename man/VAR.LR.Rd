@@ -1,5 +1,5 @@
-\name{VAR.LRtest}
-\alias{VAR.LRtest}
+\name{VAR.LR}
+\alias{VAR.LR}
 
 \title{
 The LR test for parameter restrictions}
@@ -7,7 +7,7 @@ The LR test for parameter restrictions}
 Log-Likelihood test for parameter restrictions
 }
 \usage{
-VAR.LRtest(x, p, restrict0, restrict1, type = "const")
+VAR.LR(x, p, restrict0, restrict1, type = "const",bootstrap=0,nb=500)
 }
 
 \arguments{
@@ -16,6 +16,8 @@ VAR.LRtest(x, p, restrict0, restrict1, type = "const")
   \item{restrict0}{ Restriction matrix under H0}
   \item{restrict1}{ Restriction matrix under H1, if "full", the full VAR is estimated under H1}
   \item{type}{"const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend }
+  \item{bootstrap}{ 0 for no bootstrap; 1 for iid bootstrap; 2 for wild bootstrap}
+  \item{nb}{ the number of bootstrap iterations}
 }
 \details{
 Restriction matrix is of m by 3 matrix where m is the number of restrictions.
@@ -24,12 +26,13 @@ Ak is a VAR coefficient matrix (k = 1,....p).
 }
 \value{
 \item{LRstat}{LR test statistic}
-\item{LRpval}{p-value of the LR test}
-\item{Fstat}{F version of the test}
-\item{Fpval}{p-value of F test}
+\item{pval}{p-value of the LR test}
+\item{Boot.pval}{p-value of the test based on bootstrapping}
 }
 \references{
 Lutkepohl, H. 2005, New Introduction to Multiple Time Series Analysis, Springer
+Kim, J.H. 2014, Testing for parameter restrictions in a stationary VAR model: a bootstrap alternative. Economic Modelling, forthcoming
+
 }
 \author{
 Jae H. Kim
@@ -40,11 +43,11 @@ See Chapter 4 of Lutkepohl (2005)
 
 \examples{
 data(dat)
-#replicating Table 4.4
+#replicating Table 4.4 of Lutkepohl (2005)
 restrict1="full";
 restrict0 = rbind(c(4,1,1), c(4,1,2), c(4,1,3), c(4,2,1),
 c(4,2,2),c(4,2,3),c(4,3,1),c(4,3,2),c(4,3,3))
-VAR.LRtest(dat,p=4,restrict0,restrict1,type="const")
+VAR.LR(dat,p=4,restrict0,restrict1,type="const")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

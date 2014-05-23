@@ -6,7 +6,7 @@ b <- var1$coef[,1:(k*p+1)]
 zz <- var1$zzmat[1:(k*p+1),1:(k*p+1)]
 sigu <- var1$sigu
 
-mf <- VAR.mainf(b,p,h=10)
+mf <- VAR.mainf(b,p,h)
 
 if (h == 1) sigyh <- ( ((n-p)+k*p+1)/(n-p) ) * sigu
 

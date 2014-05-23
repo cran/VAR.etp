@@ -25,12 +25,12 @@ sum2 <- t(amat) %*% solve(diag(k*p)- t(amat) %*% t(amat))
 sum4 <- sum1+sum2+sum3
 
 bias <- -(gmat %*% sum4 %*% solve(zmat))/n
-bias <- matrix(bias[1:k,],nrow=k)
+bias <- matrix(bias[1:k,],nrow=k); rownames(bias) <- rownames(b); colnames(bias)=colnames(b)[1:(p*k)]
 
 bc <- b[,1:(k*p)]-bias; 
 bs <- VAR.adjustP(b,bias,p,type); rownames(bs) <- rownames(b); colnames(bs) <- VAR.names(x,p,type)
 es <- VAR.resid(x,bs,var1$zmat,p); colnames(es) <- rownames(b)
 sigu <- t(es) %*% es / ( (n-p) -k*p -1)
 
-return(list(coef=bs,resid=es,sigu=sigu))
+return(list(coef=Re(bs),resid=Re(es),sigu=Re(sigu),Bias=Re(bias)))
 }
