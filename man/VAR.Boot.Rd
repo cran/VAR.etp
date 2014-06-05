@@ -2,7 +2,7 @@
 \alias{VAR.Boot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Bootstrapping VAR(p) model
+Bootstrapping VAR(p) model: bias-correction based on the bootstrap
 }
 \description{
 The function returns bias-corrected parmater estimators and Bias estimators based on the bootstrap

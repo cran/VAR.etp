@@ -13,7 +13,7 @@ PR.Fore(x, y, M, h = 10)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ predictor or matrix of predictors in column}
-  \item{y}{ variable to be predicted, usually data1 return}
+  \item{y}{ variable to be predicted, usually stock return}
   \item{M}{ Estimation results of the function PR.IARM}
   \item{h}{ forecasting period }
 }
@@ -24,13 +24,12 @@ Function for forecasting based on Imporved ARM
 \item{Fore }{Out-of sample and dynamic forecasts for y and x}
 }
 \references{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 \author{
 jae H. Kim
 }
-\note{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+\note{Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

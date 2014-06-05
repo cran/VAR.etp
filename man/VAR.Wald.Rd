@@ -5,7 +5,9 @@
 Wald test for parameter restrictions
 }
 \description{
-The function returns the system Wald test statistic and p-values based on asymptotic and bootstrap distributions. 
+Wald test for parameter restrictions based on system VAR estimation
+Bootstrap option is available: iid bootstrap or wild bootstrap
+Bootstrap is conducted under the null hypothesis using estimated GLS estimation: see Kim (2014) 
 }
 \usage{
 VAR.Wald(x, p, restrict, type = "const",bootstrap=0,nb=500)

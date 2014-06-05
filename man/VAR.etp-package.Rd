@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab VAR.etp\cr
 Type: \tab Package\cr
-Version: \tab 0.30\cr
-Date: \tab 2014-05-23\cr
+Version: \tab 0.40\cr
+Date: \tab 2014-06-05\cr
 License: \tab GPL-2 \cr
 }
 

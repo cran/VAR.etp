@@ -12,12 +12,12 @@ PR.order(x, y, pmax = 10)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
- \item{x}{ predictor}
-  \item{y}{ variable to be predicted, usually data1 return}
+ \item{x}{ predictor or a matrix of predictors in column}
+  \item{y}{ variable to be predicted, usually stock return}
   \item{pmax}{ maximum order for order selection }
 }
 \details{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 \value{
  \item{p.aic }{order chosen by AIC}
@@ -25,13 +25,13 @@ Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Jou
 
 }
 \references{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 \author{
 Jae H. Kim
 }
 \note{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

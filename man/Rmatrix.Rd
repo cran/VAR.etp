@@ -25,7 +25,7 @@ Function to generate restriction matrices
  \item{rvec }{this value should be passed to PR.IARM}
 }
 \references{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance 25, 13-15.
 }
 \author{
 Jae H. Kim

@@ -12,7 +12,7 @@ PR.IARM(x, y, p, Rmat = diag(k * p), rvec = matrix(0, nrow = k * p))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ predictor}
+  \item{x}{ predictor or a matrix of predictors in column}
   \item{y}{ variable to be predicted, usually data1 return}
   \item{p}{ AR order}
   \item{Rmat}{Restriction matrix, refer to function Rmatrix}
@@ -20,7 +20,7 @@ PR.IARM(x, y, p, Rmat = diag(k * p), rvec = matrix(0, nrow = k * p))
 }
 }
 \details{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance,  26, 13-25.
 }
 \value{
 
@@ -31,13 +31,17 @@ Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Jou
  \item{Fstats }{ Fstats and theor p-values}
 }
 \references{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance, 26, 13-25.
+
+See also the references Amihud et al (2002, 2004, 2010) and Stambaugh (1999) in Kim (2014)
+
 }
+
 \author{
 Jae H. Kim
 }
 \note{
-Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance
+Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance,  26, 13-25.
 }
 
 \examples{

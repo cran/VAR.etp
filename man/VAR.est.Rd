@@ -2,7 +2,7 @@
 \alias{VAR.est}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Estimation of unrestricted VAR(p) model
+Estimation of unrestricted VAR(p) model parameters
 }
 \description{
 This function returns least-squares estimation results for VAR(p) model

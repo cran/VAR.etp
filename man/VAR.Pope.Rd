@@ -2,7 +2,7 @@
 \alias{VAR.Pope}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Bootstrapping VAR(p) model
+Bias-correction for VAR parameter estimators based on Pope's formula
 }
 \description{
 The function returns bias-corrected parmater estimators and Bias estimators based on the bootstrap

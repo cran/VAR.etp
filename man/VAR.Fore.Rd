@@ -1,30 +1,29 @@
-\name{VAR.FOR}
-\alias{VAR.FOR}
+\name{VAR.Fore}
+\alias{VAR.Fore}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 VAR Forecasting
 }
 \description{
-Generate point forecasts and prediction intervals
+Generate point forecasts using the estimated VAR coefficient matrix
 }
 \usage{
-VAR.FOR(x, p, h, type = "const", alpha = 0.95)
+VAR.Fore(x, b, p, h, type = "const")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ data matrix}
+  \item{b}{ matrix of coefficients from VAR.est or VAR.Rest}
   \item{p}{ VAR order }
   \item{h}{ Forecasting Periods}
   \item{type}{"const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend}
-  \item{alpha}{ 100(1-alpha) percent prediction intervals}
-}
+  }
 \details{
-Prediction Intervals are based on normal approximation
+Generate point forecasts using the estimated VAR coefficient matrix
 }
 \value{
-\item{Intervals }{ Prediction Intervals, out-of-sample and dynamic}
-\item{Forecast }{ Point Forecasts, out-of-sample and dynamic}
-\item{alpha }{ Probability Content of Prediction Interva;s}
+\item{Fore }{ Point Forecasts, out-of-sample and dynamic}
+
 }
 \references{
 Lutkepohl, H. 2005, New Introduction to Multiple Time Series Analysis, Springer
@@ -41,6 +40,7 @@ See Chapter 3 of Lutkepohl (2005)
 \examples{
 #replicating Section 3.5.3 of Lutkepohl (2005)
 data(dat)
-VAR.FOR(dat,p=2,h=10,type="const",alpha=0.95)
+b=VAR.est(dat,p=2,type="const")$coef
+VAR.Fore(dat,b,p=2,h=10,type="const")
 }
 \keyword{ ts }
