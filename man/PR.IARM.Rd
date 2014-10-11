@@ -2,10 +2,10 @@
 \alias{PR.IARM}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Improved Augmented Regression Method for Predictive Regression
+Improved Augmented Regression Method (IARM) for Predictive Regression
 }
 \description{
-Function for Improved ARM estimation and testing
+Function for Improved ARM (IARM) estimation and testing
 }
 \usage{
 PR.IARM(x, y, p, Rmat = diag(k * p), rvec = matrix(0, nrow = k * p))
@@ -28,13 +28,11 @@ Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Jou
  \item{IARM }{IARM Estimators}
  \item{AR }{ AR parameter estimators}
  \item{ARc }{ Bias-corrected AR parameter estimators}
- \item{Fstats }{ Fstats and theor p-values}
+ \item{Fstats }{ Fstats and their p-values}
+ \item{Covbc }{ Covariance matrix of the IARM estimators (for the predictive coefficients only)}
 }
 \references{
 Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Journal of Empirical Finance, 26, 13-25.
-
-See also the references Amihud et al (2002, 2004, 2010) and Stambaugh (1999) in Kim (2014)
-
 }
 
 \author{

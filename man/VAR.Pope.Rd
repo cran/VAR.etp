@@ -5,7 +5,7 @@
 Bias-correction for VAR parameter estimators based on Pope's formula
 }
 \description{
-The function returns bias-corrected parmater estimators and Bias estimators based on the bootstrap
+The function returns bias-corrected parmater estimators and Bias estimators based on Pope's asymptotic formula
 }
 \usage{
 VAR.Pope(x, p, type = "const")
@@ -21,10 +21,10 @@ VAR.Pope(x, p, type = "const")
 Kilian's (1998) stationarity-correction is used for bias-correction
 }
 \value{
-\item{coef }{coefficient matrix}
+\item{coef }{Bias-corrected coefficient matrix}
   \item{resid }{matrix of residuals}
   \item{sigu }{residual covariance matrix}
-  \item{Bias}{Bootstrap Bias Estimator}
+  \item{Bias}{Bias Estimate}
 }
 \references{
 

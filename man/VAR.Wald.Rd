@@ -5,9 +5,12 @@
 Wald test for parameter restrictions
 }
 \description{
-Wald test for parameter restrictions based on system VAR estimation
+Wald test for zero parameter restrictions based on system VAR estimation
+
 Bootstrap option is available: iid bootstrap or wild bootstrap
+
 Bootstrap is conducted under the null hypothesis using estimated GLS estimation: see Kim (2014) 
+
 }
 \usage{
 VAR.Wald(x, p, restrict, type = "const",bootstrap=0,nb=500)
@@ -29,8 +32,11 @@ Ak is a VAR coefficient matrix (k = 1,....p).
 Under H1, the model is full VAR.
 
 The bootstrap test is conducted using the GLS estimation under the parameter restrictions implied by the null hypothesis: see Kim (2014) for details.
+
 Kim (2014) found that the bootstrap based on OLS can show inferior small sample properties.
+
 There are two versions of the bootstrap: the first is based on the iid resampling and the second based on wild bootstrapping. 
+
 The Wild bootstrap is conducted with Mammen's two-point distribution.
 
 }
@@ -42,7 +48,7 @@ The Wild bootstrap is conducted with Mammen's two-point distribution.
 \references{
 Lutkepohl, H. 2005, New Introduction to Multiple Time Series Analysis, Springer.
 
-Kim, J.H. 2014, Testing for parameter restrictions in a stationary VAR model: a bootstrap alternative. Economic Modelling, forthcoming
+Kim, J.H. 2014, Testing for parameter restrictions in a stationary VAR model: a bootstrap alternative. Economic Modelling, 41, 267-273.
 }
 \author{
 Jae H. Kim

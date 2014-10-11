@@ -127,5 +127,5 @@ colnames(AR.c) <- tem2
 Fstats=rbind(cbind(fstat,fstatc),cbind(fstatp,fstatcp))
 rownames(Fstats)=c("F-stat","p-val"); colnames(Fstats)=c("OLS","Improved ARM")
 
-return(list(LS=LS,IARM=IARM,AR=AR,ARc=AR.c,Fstats=Fstats))
+return(list(LS=LS,IARM=IARM,AR=AR,ARc=AR.c,Fstats=Fstats,Covbc=covcbc))
 }
