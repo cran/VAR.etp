@@ -12,7 +12,7 @@ VAR.Fore(x, b, p, h, type = "const")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
   \item{b}{ matrix of coefficients from VAR.est or VAR.Rest}
   \item{p}{ VAR order }
   \item{h}{ Forecasting Periods}

@@ -1,5 +1,5 @@
 VAR.irf <-
-function(b,p,sigu,h=10)
+function(b,p,sigu,h=10,graphs=FALSE)
 {
 k <- nrow(b)
 mf <- VAR.mainf(b,p,h)
@@ -18,5 +18,13 @@ for (j in 1:length(tem1))
 tem2 <- c(tem2,paste(tem1[i],tem1[j],sep="->"))
 rownames(impmat) <- tem2
 
-return(t(impmat))
+impmat=t(impmat)
+if (graphs==TRUE){
+par(mfrow=c(1,1))
+for (i in 1:ncol(impmat)){
+plot(impmat[,i],type="l",main=colnames(impmat)[i],ylab="",xlab="h")
+abline(h=0,col="red")
+par(ask=TRUE) }
+}
+return(impmat)
 }

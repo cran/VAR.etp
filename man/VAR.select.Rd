@@ -12,7 +12,7 @@ VAR.select(x, type = "const", ic = "aic", pmax)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
   \item{type}{ "const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend }
   \item{ic}{ choose one of "aic", "sc", "hq"}
   \item{pmax}{ the maximum VAR order }

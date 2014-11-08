@@ -12,7 +12,7 @@ VAR.FOR(x, p, h, type = "const", alpha = 0.95)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
   \item{p}{ VAR order }
   \item{h}{ Forecasting Periods}
   \item{type}{"const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend}

@@ -17,7 +17,7 @@ VAR.Wald(x, p, restrict, type = "const",bootstrap=0,nb=500)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
   \item{p}{ VAR order }
   \item{restrict}{ Restriction matrix under H0}
   \item{type}{"const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend }

@@ -46,9 +46,10 @@ Kim J.H., 2014, Predictive Regression: Improved Augmented Regression Method, Jou
 data(data1)
 # Replicating Table 5 (excess return) of Kim (2014)
 y=data1$ret.nyse.vw*100 -data1$tbill*100
-x=cbind(log(data1$dy.nyse), data1$tbill*100); k=ncol(x) 
+x=cbind(log(data1$dy.nyse), data1$tbill*100); 
 
-M=PR.IARM(x,y,p=1)}
+Rmat1=Rmatrix(p=1,k=2,type=1,index=0); Rmat=Rmat1$Rmat; rvec=Rmat1$rvec
+M=PR.IARM(x,y,p=1,Rmat,rvec)}
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

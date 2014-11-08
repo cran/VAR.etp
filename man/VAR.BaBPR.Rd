@@ -11,7 +11,7 @@ VAR.BaBPR(x, p, h, nboot = 500, nb = 200, type = "const", alpha = 0.95)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
  \item{p}{ AR order }
  \item{h}{ forecasting period }
  \item{nboot}{ number of 2nd-stage bootstrap iterations}

@@ -15,7 +15,7 @@ VAR.LR(x, p, restrict0, restrict1, type = "const",bootstrap=0,nb=500)
 }
 
 \arguments{
-  \item{x}{ data matrix}
+  \item{x}{ data matrix in column}
   \item{p}{ VAR order }
   \item{restrict0}{ Restriction matrix under H0}
   \item{restrict1}{ Restriction matrix under H1, if "full", the full VAR is estimated under H1}

@@ -12,7 +12,7 @@ VAR.Pope(x, p, type = "const")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
- \item{x}{ data matrix}
+ \item{x}{ data matrix in column}
  \item{p}{ AR order }
   \item{type}{ "const" for the AR model with intercept only, "const+trend" for the AR model with intercept and trend }
 }
