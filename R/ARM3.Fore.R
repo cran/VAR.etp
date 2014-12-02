@@ -35,7 +35,7 @@ for( i in 1:h)
     rx <- rbind(rx,t(f))
     pp <- pp+1
     }
-forecast <- rx[(p+1):(p+h),]
+forecast <- rx[(p+1):(p+h), ,drop=F]
 colnames(forecast) <- c("y",paste("x",1:(k-1),sep="")); rownames(forecast) <- paste("h",1:h,sep="")
 return(forecast)
 }

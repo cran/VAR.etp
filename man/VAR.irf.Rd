@@ -2,10 +2,10 @@
 \alias{VAR.irf}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Orthognalized impluse response functions from an estimated VAR(p) model
+Orthogonalized impluse response functions from an estimated VAR(p) model
 }
 \description{
-This function returns Orthognalized impluse response functions
+This function returns Orthogonalized impluse response functions
 }
 \usage{
 VAR.irf(b, p, sigu, h=10,graphs=FALSE)

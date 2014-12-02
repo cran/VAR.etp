@@ -26,7 +26,7 @@ for( i in 1:h)
     rx <- rbind(rx,t(f))
     pp <- pp+1
     }
-fore <- rx[(p+1):(p+h),]
+fore <- rx[(p+1):(p+h),,drop=F]
 colnames(fore) <- c("y","x"); rownames(fore) <- paste("h",1:h,sep="")
 return(fore)
 }

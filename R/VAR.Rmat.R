@@ -27,7 +27,7 @@ for(i in 1:length(tem1)){
 index = tem1[i]
 if(index == 1) Rmat <- rbind(matrix(0,ncol=M),Rmat)
 else{
-if(index <= nrow(Rmat)) Rmat <- rbind(Rmat[1:(index-1),],matrix(0,ncol=M),Rmat[index:nrow(Rmat),])
+if(index <= nrow(Rmat)) Rmat <- rbind(Rmat[1:(index-1),,drop=F],matrix(0,ncol=M),Rmat[index:nrow(Rmat),,drop=F])
 if(index > nrow(Rmat)) Rmat <- rbind(Rmat,matrix(0,ncol=M)) }
 }
 if(ncol(restrict) == 4) rmat[tem1,] = restrict[,4]
