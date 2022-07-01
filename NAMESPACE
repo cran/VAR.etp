@@ -1,1 +1,4 @@
 export(VAR.est, VAR.FOR, VAR.Fore, VAR.Wald, VAR.select, VAR.Rest, VAR.LR, VAR.BPR, VAR.BaBPR, VAR.Boot, VAR.Pope, PR.IARM, PR.Fore, PR.order, Rmatrix,VAR.irf)
+importFrom("graphics", "abline", "par")
+    importFrom("stats", "ar.burg", "pchisq", "pf", "pt", "qnorm",
+               "quantile", "rnorm", "runif")

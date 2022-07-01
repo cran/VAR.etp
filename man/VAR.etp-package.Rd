@@ -2,7 +2,7 @@
 \alias{VAR.etp-package}
 \alias{VAR.etp}
 \docType{package}
-\title{VAR modelling: estimation, testing, and prediction
+\title{VAR Modelling: Estimation, Testing, and Prediction
 }
 \description{ Estimation, Hypothesis Testing, Prediction in Stationary Vector Autoregressive Models
 }
